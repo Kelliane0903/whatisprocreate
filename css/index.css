@@ -1,0 +1,17 @@
+@import url(first-page.css);
+@import url(second-page.css);
+@import url(third-page.css);
+@import url(fourth-page.css);
+@import url(header.css);
+@import url(swiper.css);
+@import url(buttons.css);
+@import url(fifth-page.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: black;
+}

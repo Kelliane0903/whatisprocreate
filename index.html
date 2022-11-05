@@ -1,0 +1,180 @@
+<html lang="en" class="sl-theme-dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/themes/dark.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/shoelace.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+      <div class="container">
+        <sl-drawer label="Want to buy procreate?" class="drawer-overview">
+          You want to buy procreate? Here are some steps you need to go through to be able to purchase procreate:
+          <br>1. Go on App store. <br>
+          <br>2. Tap procreate.<br>
+          <br>3. Download procreate. <br>
+          <br>4. Enjoy.
+
+        <sl-button slot="footer" variant="primary">Close</sl-button>
+      </sl-drawer>
+      <div class="header">
+        <h2 class="logo"></h2>
+
+        <button class="scroll-top-btn" onclick="scrollToTop()">
+          Scroll Top
+        </button>
+        <div class="buttons">
+          <sl-button>Buy Now</sl-button>
+        </div>
+      </div>
+      <div class="first-page">
+        <div class="image-background"></div>
+      </div>
+      <div class="second-page">
+        <div class="content-second">
+          <div class="text-second">
+            <div class="text-second-part-1">
+              <h2>HISTORY</h2>
+              <p>
+                Savage Interactive is the founder of procreate. Savage Interactive was founded by James Cuda and his wife Alanna. James met a man name Lloyd and he was a self taught developer. The collaborated together to be able to create Procreate for Ipad in 2010. Then Procreate was launched in March 2011 and it was great success. Cuda did not create Procreate for money but for the Art. 
+              </p>
+            </div>
+            <div class="text-second-part-2">
+              <div class="text-h2">
+                <h2>WHAT IS PROCREATE?</h2>
+              </div>
+              <p>
+                An software called Procreate allows users to create digital graphics and artwork. It facilitates the production of beautiful animations and artwork (Savage 2019). It offers the user a ton of functionality, therefore having more brushes leads to greater creativity. You can take the app everywhere as as soon as you get it, the app will be yours forever. 
+              </p>
+            </div>
+          </div>
+          <div class="second-image-position">
+            <div class="second-image-background"></div>
+          </div>
+        </div>
+      </div>
+      <div class="third-page">
+        <div class="third-text">
+          <h1>DISCOVER PROCREATE</h1>
+          <p>
+            Unlimited creativity. Procreate allows you to create amazing and beautiful digital illustrations. From beginners to experts, Procreate is for everyone. Even though you does not know how to draw, you will be able to draw like a professional with procreate with just a few tutorials. Try it by yourself to know how the app is. 
+          </p>
+        </div>
+        <video width="600" height="400" controls>
+          <source src="./images/Illustration1.mp4" type="video/mp4">
+        </video>
+        <div class="third-image-position">
+          <div class="third-image">
+            <div class="top-box">
+              <div class="left-box"></div>
+              <div class="hide">This is a text</div>
+              <div class="right-box"></div>
+            </div>
+            <div class="left-most-box"></div>
+          </div>
+        </div>
+      </div>
+      <div class="fourth-page">
+        <div class="container-swiper">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/swiper1.JPG" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/swiper2.PNG" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/swiper3.JPG" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/swiper4.PNG" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/swiper5.JPG" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/swiper6.JPG" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/swiper7.JPG" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/swiper8.PNG" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/swiper9.JPG" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="fifth-page">
+        <div class="fifth-container">
+          <div class="image-container-fifth">
+            <div class="fifth-image"></div>
+          </div>
+          <div class="container-flex-fifth">
+            <div class="text-para">
+              You will not regret your purchase as if you buy procreate now, it will be yours for life. Procreate enables you to save time and money. Easy to carry everywhere with you. Procreate has so much to offer to you. More new features are coming soon and you will be mind blown. Do not wait and start to create. 
+            </div>
+            <div class="text-para2">
+            only at 9.99 USD
+            </div>
+            <div>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const drawer = document.querySelector(".drawer-overview");
+      const openButton = drawer.nextElementSibling;
+      const closeButton = drawer.querySelector('sl-button[variant="primary"]');
+
+      openButton.addEventListener("click", () => drawer.show());
+      closeButton.addEventListener("click", () => drawer.hide());
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      function scrollToTop() {
+        window.scrollTo(0, 0);
+      }
+    </script>
+  </body>
+</html>

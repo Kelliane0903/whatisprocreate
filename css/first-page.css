@@ -1,0 +1,14 @@
+.first-page {
+  height: 100vh;
+  background-image: linear-gradient(180deg, black, #752677);
+  display: flex;
+  justify-content: center;
+}
+
+.image-background {
+  width: 67%;
+  height: 100%;
+  background-image: url(../images/first-page-image.PNG);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
